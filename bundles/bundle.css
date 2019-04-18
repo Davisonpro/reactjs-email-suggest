@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+
+.form-group {
+  position: relative; }
+  .form-group .form-control {
+    position: relative;
+    border: 2px solid #5d0dd4;
+    border-radius: 7px;
+    min-width: 400px; }
+    .form-group .form-control label {
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: 15px;
+      background: #efefef;
+      padding: 0 10px;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: inherit; }
+    .form-group .form-control input {
+      display: block;
+      width: 100%;
+      padding: 22px 25px;
+      font-size: 17px;
+      font-weight: 400;
+      font-family: inherit;
+      background: transparent;
+      border: none; }
+  .form-group .mailcheck {
+    margin-top: 5px;
+    text-align: right;
+    font-weight: 500; }
+  .form-group .mailcheck-button {
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: inherit;
+    font-style: italic;
+    color: #5d0dd4;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-position: under; }
+  .form-group .mailcheck-button:focus {
+    outline: none;
+    color: #480ca0; }
+  .form-group .mailcheck-button:hover {
+    color: #480ca0; }
+  .form-group .mailcheck-button:active {
+    color: #480ca0; }
+

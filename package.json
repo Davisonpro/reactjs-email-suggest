@@ -1,0 +1,78 @@
+{
+	"name": "reactjs-mail-check",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.ts",
+	"author": "Davison Pro",
+	"engines": {
+		"node": ">=10.6.0",
+		"npm": ">=6.1.0"
+	},
+	"dependencies": {
+		"react": "^16.7.0",
+		"react-dom": "^16.7.0",
+		"react-mailcheck": "^1.2.0",
+		"typescript": "^3.4.3"
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-env",
+			"@babel/preset-react",
+			"@babel/preset-typescript"
+		],
+		"plugins": [
+			[
+				"@babel/plugin-syntax-dynamic-import"
+			],
+			[
+				"@babel/plugin-proposal-decorators",
+				{
+					"legacy": true,
+					"decoratorsBeforeExport": true
+				}
+			],
+			[
+				"@babel/plugin-proposal-class-properties",
+				{
+					"loose": true
+				}
+			],
+			[
+				"@babel/plugin-proposal-object-rest-spread"
+			]
+		]
+	},
+	"scripts": {
+		"build-assets": "webpack -p",
+		"start": "webpack -d --watch"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.2.2",
+		"@babel/plugin-proposal-class-properties": "^7.3.0",
+		"@babel/plugin-proposal-decorators": "^7.3.0",
+		"@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+		"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+		"@babel/preset-env": "^7.3.1",
+		"@babel/preset-react": "^7.0.0",
+		"@babel/preset-typescript": "^7.1.0",
+		"@babel/runtime": "^7.3.1",
+		"autoprefixer": "^9.4.7",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^8.0.5",
+		"css-loader": "^2.1.0",
+		"file-loader": "^3.0.1",
+		"fork-ts-checker-webpack-plugin": "^0.5.2",
+		"mini-css-extract-plugin": "^0.5.0",
+		"node-sass": "^4.11.0",
+		"postcss": "^7.0.14",
+		"postcss-loader": "^3.0.0",
+		"sass-loader": "^7.1.0",
+		"ts-loader": "^5.3.3",
+		"tslint": "^5.12.1",
+		"tslint-config-prettier": "^1.18.0",
+		"webpack": "^4.29.0",
+		"webpack-bundle-tracker": "^0.4.2-beta",
+		"webpack-cli": "^3.2.1",
+		"webpack-dev-server": "^3.1.14"
+	}
+}
